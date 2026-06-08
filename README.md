@@ -5,7 +5,7 @@ a Halal Chinese-Muslim restaurant known for hand-pulled *mee tarik*, slow-simmer
 beef broth, and a signature house chili oil. Built as a website-design competition
 entry.
 
-🔗 **Live (after deploy):** https://currylaksa.github.io/vibeui-hotmealbar/
+🔗 **Live:** https://currylaksa.github.io/vibeui-hotmealbar/
 
 ---
 
@@ -94,12 +94,10 @@ To regenerate after changing `logo.jpg`, re-run the Pillow crop script that buil
 these (crops to content, knocks out the white background, recolors the footer copy
 to cream).
 
-## Before going live
+## Links & notes
 
-A few links are placeholders — swap in real URLs in `index.html`:
-
-- **Grab** and **foodpanda** order buttons currently point to `#`.
-- **Facebook** and **TikTok** point to `#` (Instagram is already wired to the real
-  profile).
-
-Menu prices are marked *indicative — confirm in-store*.
+- **Instagram** and **Facebook** are wired to the real profiles.
+- **Grab** and **foodpanda** order buttons are intentionally not linked (point to
+  `#`); add real URLs in `index.html` if/when wanted.
+- **TikTok** is a placeholder (`#`).
+- Menu prices are marked *indicative — confirm in-store*.
