@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Local Claude tooling / settings (not part of the site)
+.claude/
+
+# Editor / scratch
+_review.html
+_*.html
+*.log

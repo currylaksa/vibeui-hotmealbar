@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot Meal Bar — Hand-Pulled Noodles, Fully Halal</title>
+  <meta name="description" content="Hot Meal Bar — Halal Chinese-Muslim kitchen. Mee tarik pulled by hand, slow beef broth, and a chili oil people drive across town for. Now in Bangi, Cyberjaya & UTM Johor Bahru." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hot Meal Bar — Hand-Pulled Noodles, Fully Halal" />
+  <meta property="og:description" content="Mee tarik pulled by hand, slow beef broth, and a signature chili oil. Northwestern-Chinese, fully halal." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Amiri&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll-tracking chili-oil stream (signature motion) -->
+  <div class="oil-rail" aria-hidden="true">
+    <div class="oil-track"></div>
+    <div class="oil-stream"></div>
+    <div class="oil-drop"></div>
+  </div>
+
+  <!-- Inline icon sprite (Lucide-style, MIT). Used via <use href="#i-..."> -->
+  <svg width="0" height="0" class="svg-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/>
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21.42 10.92 12 6 2.58 10.92 12 16l9.42-5.08Z"/><path d="M6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M21.42 10.92V16"/>
+      </symbol>
+      <symbol id="i-cup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 3h14l-1.2 17.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 3Z"/><path d="M6 11a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/>
+      </symbol>
+      <symbol id="i-halal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M17 5h4"/>
+      </symbol>
+      <symbol id="i-bowl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M8 3c0 1.2-1 1.2-1 2.4s1 1.2 1 2.4"/><path d="M12 3c0 1.2-1 1.2-1 2.4s1 1.2 1 2.4"/><path d="M16 3c0 1.2-1 1.2-1 2.4s1 1.2 1 2.4"/>
+      </symbol>
+      <symbol id="i-chili" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M17.6 3.6c-.6.3-1 .9-1.1 1.7-1.3 6-6.4 10.5-12.5 11-.7 0-1.2.7-1 1.4C3.4 21 5.5 23 8.2 23 15.3 23 21 17.2 21 10.1c0-.8-.1-1.6-.2-2.4.6-.4 1-1 1-1.7 0-1-.8-1.8-1.8-1.8-.5 0-1 .2-1.3.5-.3-.4-.7-.8-1.1-1.1Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#signatures">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Hot Meal Bar home">
+      <img class="brand-logo" src="assets/logo-mark.png" alt="" width="240" height="232" />
+      <span class="brand-text">
+        <span class="brand-name">HOT MEAL BAR</span>
+        <span class="brand-ar" lang="ar" dir="rtl">مطعم المسلم الصيني</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#signatures">Signatures</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Story</a>
+      <a href="#locations">Locations</a>
+    </nav>
+    <a class="btn btn-order nav-cta" href="#order">Order now</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">حلال · Fully Halal · No pork, no lard</p>
+      <h1 class="hero-title">
+        <span class="reveal" style="--d:.05s">Pulled by hand.</span>
+        <span class="reveal hl" style="--d:.15s">Slurped with pride.</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:.25s">
+        A Halal Chinese-Muslim kitchen from the northwest of China — mee tarik
+        stretched to order, slow ox broth, and a chili oil people remember.
+      </p>
+      <div class="hero-cta reveal" style="--d:.35s">
+        <a class="btn btn-order" href="#order">See the menu</a>
+        <a class="btn btn-ghost" href="#locations">Find a branch</a>
+      </div>
+      <p class="hero-quote reveal" style="--d:.45s">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        “Best mee tarik in Bangi.” <span class="muted">— the reviews</span>
+      </p>
+    </div>
+
+    <!-- CSS noodle bowl -->
+    <div class="bowl" aria-hidden="true">
+      <div class="bowl-steam"><span></span><span></span><span></span></div>
+      <div class="bowl-body">
+        <div class="noodles">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="chili c1"></div><div class="chili c2"></div><div class="chili c3"></div>
+      </div>
+      <div class="bowl-base"></div>
+    </div>
+
+    <a class="scroll-hint" href="#signatures" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>MEE TARIK 拉面</span><span class="dot">●</span>
+      <span>BEEF SOUP NOODLES</span><span class="dot">●</span>
+      <span>HOUSE CHILI OIL 辣椒油</span><span class="dot">●</span>
+      <span>DUMPLINGS 饺子</span><span class="dot">●</span>
+      <span>MENU RAHMAH RM5</span><span class="dot">●</span>
+      <span>MEE TARIK 拉面</span><span class="dot">●</span>
+      <span>BEEF SOUP NOODLES</span><span class="dot">●</span>
+      <span>HOUSE CHILI OIL 辣椒油</span><span class="dot">●</span>
+      <span>DUMPLINGS 饺子</span><span class="dot">●</span>
+      <span>MENU RAHMAH RM5</span><span class="dot">●</span>
+    </div>
+  </div>
+
+  <!-- SIGNATURES -->
+  <section class="signatures section" id="signatures">
+    <div class="section-head">
+      <p class="kicker reveal">01 — The line-up</p>
+      <h2 class="reveal">The dishes worth the drive</h2>
+    </div>
+    <div class="dish-grid">
+      <article class="dish reveal">
+        <div class="dish-art art-noodle" aria-hidden="true"></div>
+        <div class="dish-body">
+          <div class="dish-top">
+            <h3>Mee Tarik</h3>
+            <span class="heat" role="img" aria-label="Heat: 2 of 5">
+              <svg class="chili-label"><use href="#i-chili"/></svg>
+              <span class="bars"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>
+            </span>
+          </div>
+          <p>Wheat noodles stretched and slapped by hand the moment you order. Springy, never machine-cut.</p>
+          <span class="badge">The hero</span>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-art art-broth" aria-hidden="true"></div>
+        <div class="dish-body">
+          <div class="dish-top">
+            <h3>Beef Soup Noodles</h3>
+            <span class="heat" role="img" aria-label="Heat: 1 of 5, chili served separately">
+              <svg class="chili-label"><use href="#i-chili"/></svg>
+              <span class="bars"><i class="on"></i><i></i><i></i><i></i><i></i></span>
+            </span>
+          </div>
+          <p>Bones simmered for hours into a clean, deep broth. Ask for the chili oil on the side.</p>
+          <span class="badge">Broth you'll talk about</span>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-art art-dumpling" aria-hidden="true"></div>
+        <div class="dish-body">
+          <div class="dish-top">
+            <h3>Dumplings</h3>
+            <span class="price">RM10 / 25 pcs</span>
+          </div>
+          <p>Chicken, beef-and-carrot, or pan-fried crispy. Folded to share — or not.</p>
+          <span class="badge">25 for the table</span>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-art art-soup" aria-hidden="true"></div>
+        <div class="dish-body">
+          <div class="dish-top">
+            <h3>Ox Soup</h3>
+            <span class="price">RM8 / bowl</span>
+          </div>
+          <p>A honest bowl of slow ox soup. Comfort food, northwestern style.</p>
+          <span class="badge">RM8 comfort</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CHILI OIL FEATURE -->
+  <section class="chili-feature section">
+    <div class="chili-feature-inner reveal">
+      <div class="chili-copy">
+        <p class="kicker">The house secret</p>
+        <h2>The chili oil people<br />drive across town for.</h2>
+        <p>Toasted, fragrant, and properly spicy — our chili oil isn't a side, it's
+          the signature. Spooned over noodles, swirled into broth, smuggled home in
+          a takeaway cup.</p>
+        <p class="warn">On the spicy side. We warned you.</p>
+      </div>
+      <div class="chili-visual" aria-hidden="true">
+        <div class="oil-pool"><div class="oil-shine"></div></div>
+        <svg class="float-chili fc1 ic"><use href="#i-chili"/></svg>
+        <svg class="float-chili fc2 ic"><use href="#i-chili"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU + RAHMAH -->
+  <section class="menu section" id="menu">
+    <div class="section-head">
+      <p class="kicker reveal">02 — Eat well for less</p>
+      <h2 class="reveal">Generous plates, gentle prices</h2>
+    </div>
+
+    <div class="rahmah reveal">
+      <div class="rahmah-tag">RM<span>5</span></div>
+      <div class="rahmah-copy">
+        <h3>Menu Rahmah</h3>
+        <p>Pick <strong>1 vegetable</strong> + <strong>1 protein</strong>, over rice.
+          A full meal for five ringgit — because everyone deserves a hot meal.</p>
+      </div>
+      <span class="rahmah-ar" lang="ar" dir="rtl" aria-hidden="true">رحمة</span>
+    </div>
+
+    <div class="menu-cols">
+      <div class="menu-col reveal">
+        <h4>Noodles</h4>
+        <ul class="menu-list">
+          <li><span>Mee Tarik (beef)</span><span class="dots"></span><span class="m-price">RM12</span></li>
+          <li><span>Beef Soup Noodles</span><span class="dots"></span><span class="m-price">RM12</span></li>
+          <li><span>Fried Mee Tarik</span><span class="dots"></span><span class="m-price">RM11</span></li>
+          <li><span>Chicken Noodle Soup</span><span class="dots"></span><span class="m-price">RM10</span></li>
+        </ul>
+        <p class="menu-note">Indicative prices — confirm in-store.</p>
+      </div>
+      <div class="menu-col reveal">
+        <h4>Dumplings &amp; Bowls</h4>
+        <ul class="menu-list">
+          <li><span>Dumplings — 25 pcs</span><span class="dots"></span><span class="m-price">RM10</span></li>
+          <li><span>Fried Dumplings</span><span class="dots"></span><span class="m-price">RM11</span></li>
+          <li><span>Ox Soup (bowl)</span><span class="dots"></span><span class="m-price">RM8</span></li>
+          <li><span>Menu Rahmah</span><span class="dots"></span><span class="m-price">RM5</span></li>
+        </ul>
+        <p class="menu-note">Indicative prices — confirm in-store.</p>
+      </div>
+    </div>
+
+    <ul class="perks">
+      <li class="reveal"><span class="perk-i"><svg class="ic"><use href="#i-cap"/></svg></span><div><strong>Student discount</strong><br />Flash a student card.</div></li>
+      <li class="reveal"><span class="perk-i"><svg class="ic"><use href="#i-cup"/></svg></span><div><strong>Free refills</strong><br />Drinks topped up, on us.</div></li>
+      <li class="reveal"><span class="perk-i"><svg class="ic"><use href="#i-halal"/></svg></span><div><strong>Fully halal</strong><br />No pork, no lard. Ever.</div></li>
+      <li class="reveal"><span class="perk-i"><svg class="ic"><use href="#i-bowl"/></svg></span><div><strong>Generous portions</strong><br />You won't leave hungry.</div></li>
+    </ul>
+  </section>
+
+  <!-- STORY / HERITAGE -->
+  <section class="story section" id="story">
+    <div class="story-inner">
+      <div class="story-copy reveal">
+        <p class="kicker">03 — Where it comes from</p>
+        <h2>A Silk-Road table,<br />set in Malaysia.</h2>
+        <p>Hot Meal Bar cooks in the Hui and Xinjiang tradition of northwestern
+          China — wheat pulled into noodles, beef simmered slow, spice handled with
+          respect. Every dish is fully halal, the way it has always been made in
+          our community.</p>
+        <p>For us, feeding people well is its own kind of dakwah: heritage you can
+          taste, shared one hot bowl at a time.</p>
+        <p class="story-ar" lang="ar" dir="rtl">مطعم المسلم الصيني</p>
+      </div>
+      <div class="story-stats reveal">
+        <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Halal kitchen</span></div>
+        <div class="stat"><span class="stat-n">0</span><span class="stat-l">Pork &amp; lard</span></div>
+        <div class="stat"><span class="stat-n">By hand</span><span class="stat-l">Every noodle</span></div>
+        <div class="stat"><span class="stat-n">3</span><span class="stat-l">Branches &amp; growing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section class="locations section" id="locations">
+    <div class="section-head">
+      <p class="kicker reveal">04 — Come find us</p>
+      <h2 class="reveal">Three tables, one kitchen</h2>
+    </div>
+    <div class="loc-grid">
+      <article class="loc reveal">
+        <span class="loc-pin"><svg class="ic"><use href="#i-pin"/></svg></span>
+        <h3>UKM Bangi</h3>
+        <p>PUSANIKA, Level 3<br />Universiti Kebangsaan Malaysia</p>
+        <span class="loc-status open">Open now</span>
+      </article>
+      <article class="loc reveal">
+        <span class="loc-pin"><svg class="ic"><use href="#i-pin"/></svg></span>
+        <h3>Cyberjaya</h3>
+        <p>Cyberjaya, Selangor</p>
+        <span class="loc-status open">Open now</span>
+      </article>
+      <article class="loc reveal new">
+        <span class="loc-pin"><svg class="ic"><use href="#i-pin"/></svg></span>
+        <h3>UTM, Johor Bahru</h3>
+        <p>Universiti Teknologi Malaysia<br />Our newest table down south.</p>
+        <span class="loc-status fresh">Now open</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ORDER / CONTACT -->
+  <section class="order section" id="order">
+    <div class="order-inner reveal">
+      <div class="order-copy">
+        <p class="kicker">Hungry now?</p>
+        <h2>Order in, or come say salam.</h2>
+        <p>Delivery across the Klang Valley, or pull up a stool. Either way, ask for
+          extra chili oil.</p>
+        <a class="phone" href="tel:+60193888702"><svg class="ic"><use href="#i-phone"/></svg> +60 19-388 8702</a>
+      </div>
+      <div class="order-actions">
+        <a class="order-btn grab" href="#" rel="noopener">Order on Grab</a>
+        <a class="order-btn panda" href="#" rel="noopener">Order on foodpanda</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/hotmealbar" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/logo-full-light.png" alt="Hot Meal Bar — 好米巴 HotMealBa" width="480" height="667" />
+    </div>
+    <p class="footer-ar" lang="ar" dir="rtl">مطعم المسلم الصيني</p>
+    <p class="footer-tag">Hand-pulled noodles · Fully halal · Bangi · Cyberjaya · UTM Johor Bahru</p>
+    <p class="footer-fine">Concept site for design purposes. Menu prices indicative — confirm in-store.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
